@@ -183,7 +183,7 @@ Windows Terminal 下 shell 自己**没有窗口**，它有一个 `PseudoConsoleW
 常见问题：
 
 - **权限框出来了但没弹窗** —— 看 `hook.log` 有没有新行。没有的话是 hook 没触发，
-  检查 `claude plugin details win-popup` 里 Hooks 是不是 **8 个**。
+  检查 `claude plugin details win-popup` 里 Hooks 是不是 **7 个**（事件名数，非条目数）。
 - **点击没跳到终端** —— 看 `popup.log` 里的 `找到会话窗口` / `没找到会话窗口` 那行。
   显示 `跳过桌面/任务栏窗口` 说明防护起作用了（宁可不跳也不跳到任务栏）。
 - **弹窗一闪就没了** —— `clear_*.flag` 残留。删掉 `%LOCALAPPDATA%\claude-win-notify\clear_*.flag`。

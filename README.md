@@ -89,7 +89,7 @@ claude plugin install win-popup@win-popup
 claude plugin details win-popup
 ```
 
-`Hooks` 一栏应该显示 **8 个**。
+`Hooks` 一栏应该显示 **7 个**（不同事件名；`Stop` 挂了两个脚本，所以 hooks.json 里是 8 条）。
 
 ---
 

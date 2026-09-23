@@ -96,14 +96,19 @@ claude plugin install win-popup@win-popup
 claude plugin details win-popup
 ```
 
-**检查 `Hooks` 那一行，必须是 `8`。** 例如：
+**检查 `Hooks` 那一行，必须是 `7`。** 例如：
 
 ```
 Component inventory
   Skills (0)
   Agents (0)
-  Hooks (8)  PermissionRequest, PreToolUse, Notification, UserPromptSubmit, ...
+  Hooks (7)  PermissionRequest, PreToolUse, Notification, UserPromptSubmit, PostToolUse, Stop, SessionEnd
 ```
+
+> ⚠️ 是 **7** 不是 8 —— 这里显示的是**不同事件名**的数量。
+> `Stop` 这个事件挂了两个脚本（一个建弹窗、一个写关闭信号），
+> 所以 `hooks.json` 里的条目是 8 个，但事件名只有 7 个。
+> 装的人看到 7 是**正常的**，别当成失败。
 
 - 显示 8 → ✅ 安装成功
 - 显示其他数字或 0 → 安装不完整，回到步骤 1 检查路径是否正确
