@@ -1,0 +1,7 @@
+# 运行时日志（插件实际运行在 %LOCALAPPDATA%，这里只是保险）
+*.log
+# 编辑器/系统垃圾
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

@@ -1,0 +1,14 @@
+{
+  "name": "win-popup",
+  "description": "Windows 桌面提醒插件：Claude Code 需要确认或答完时弹置顶窗口，点击跳回该会话",
+  "owner": {
+    "name": "win-popup"
+  },
+  "plugins": [
+    {
+      "name": "win-popup",
+      "source": "./plugins/win-popup",
+      "description": "Claude Code 需要确认或答完时弹 Windows 置顶窗口，点击跳回该会话"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "win-popup",
+  "version": "0.1.0",
+  "description": "Claude Code 需要你确认、或一轮任务答完时，弹一个 Windows 原生置顶窗口。点击跳回发起该确认的终端。",
+  "author": {
+    "name": "win-popup"
+  }
+}
